@@ -22,8 +22,9 @@
 
 .banner {
     /* background-image: linear-gradient(to right, var(--orange1-color), var(--yellow-color)); */
-    background-color: var(--orange1-color);
-    color: var(--white-color);
+    margin-top: 2rem;
+    background-color: #ff31313e;
+    color: var(--orange-color);
     text-align: center;
     padding: 5rem 1rem;
     margin-bottom: 2rem;
@@ -37,7 +38,7 @@
         width: 180px;
         height: 180px;
         border-radius: 50%;
-        background: var(--yellow1-color);
+        background: #ff31313e;
     }
 
     #absoluteCircleBottom {
@@ -47,7 +48,7 @@
         width: 180px;
         height: 180px;
         border-radius: 50%;
-        background: var(--yellow1-color);
+        background: #ff31313e;
     }
 
     h1 {
