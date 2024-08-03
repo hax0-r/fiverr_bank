@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #1e1c1c;
+    --white-color: #f7f7f7;
+    --orange-color: #ff3132;
+    --yellow-color: #f7be27;
+}
+
+.menu_pg2 {
+    padding: 4vmin 0 5vmin 0;
+
+    h1 {
+        color: #822E1B;
+        font-family: Raleway;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.05rem;
+        text-align: center;
+    }
+
+    #menu_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 4rem 5vmin;
+
+        .menu_card {
+            /* padding: 1rem 0; */
+            margin: 1rem;
+            /* border: 1.092px solid #822E1B; */
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 20px 0px;
+            width: 23.89425rem;
+            height: 520px;
+            min-height: 19.525rem;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            gap: .9rem;
+
+            img {
+                max-width: 23.89425rem;
+                width: 100%;
+            }
+
+
+            a {
+                text-decoration: none;
+
+                h2 {
+                    color: #822E1B;
+                    font-family: Raleway;
+                    font-size: 1.75rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    /* text-align: center; */
+                    padding-top: .5rem;
+                    line-height: normal;
+                    letter-spacing: 0.035rem;
+                    padding: 0 1rem;
+                    transition: 200ms all;
+
+                    &:hover {
+                        color: #822e1b81;
+                    }
+                }
+            }
+
+            .cardAuthor {
+                display: flex;
+                padding: 0 1rem;
+                align-items: center;
+                /* justify-content: center; */
+                gap: 1rem;
+
+                img {
+                    height: 22px;
+                    width: 22px;
+                    border-radius: 50%;
+                }
+
+                h5 {
+                    margin-top: 10px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: #822E1B;
+                    letter-spacing: .06rem;
+                }
+            }
+
+            p {
+                padding: 0 1rem;
+                color: #822E1B;
+                font-family: Raleway;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.125rem;
+                letter-spacing: 0.0175rem;
+                /* max-width: 17.1875rem; */
+                /* text-align: center; */
+                width: 100%;
+            }
+
+            h3 {
+                color: #822E1B;
+                font-family: Raleway;
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 700;
+                letter-spacing: 0.03125rem;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .menu_card {
+                padding: 1rem .5rem;
+                margin: .5rem;
+                width: 18.98656rem;
+            }
+        }
+    }
+}
