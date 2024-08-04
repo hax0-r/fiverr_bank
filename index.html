@@ -8,30 +8,51 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./Assets/Global/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="./CSS/NavNutton.css">
     <title>FinanSelect</title>
 </head>
 
 <body>
 
 
-    <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900 ">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <a href="#" class="flex items-center">
-                <img src="./Assets/Global/logo.png" class=" mr-3 sm:h-16 h-10" alt="Logo">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">FinanSelect</span>
+                <img src="./Assets/Global/logo.png" class="mr-3 sm:h-12 h-10" alt="Logo">
+                <span
+                    class="self-center text:lg sm:text-xl font-bold sm:font-extrabold whitespace-nowrap dark:text-white"><span
+                        class="text-[#ff3132]">Finan </span>Select</span>
             </a>
-            <div class="flex items-center lg:order-2">
+            <div class="flex gap-1 items-center lg:order-2">
                 <div class="hidden mt-2 mr-4 sm:inline-block">
                     <span></span>
                 </div>
+                <!-- <a href="#"
+                    class="text-white bg-[#ff3132] hover:opacity-90 transition-all font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">Get
+                    Started</a> -->
 
-                <a href="#"
-                    class="text-white bg-[#ff3132] hover:opacity-90 transition-all  font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none ">Get
-                    Started</a>
-                <button data-collapse-toggle="mobile-menu-2" type="button"
-                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="mobile-menu-2" aria-expanded="true">
+                <div>
+                    <button class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                        <span class="text">Get Start</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <button data-collapse-toggle="mobile-menu" type="button"
+                    class="inline-flex mt-2 items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -46,7 +67,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden" id="mobile-menu">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
                         <a href="./index.html"
@@ -54,21 +75,17 @@
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="./about.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <a href="./proBank.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pro
+                            Banks</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">online
-                            banks</a>
+                        <a href="./Insurance.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Insurance</a>
                     </li>
                     <li>
-                        <a href="./BoursoBank.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">BoursoBank</a>
-                    </li>
-                    <li>
-                        <a href="./Blog.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        <a href="./services.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                     </li>
                     <li>
                         <a href="./contactUs.html"
@@ -78,9 +95,6 @@
             </div>
         </div>
     </nav>
-
-    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-
 
 
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
@@ -160,7 +174,7 @@
 
                 <div class="flex flex-1 flex-col justify-between">
                     <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                        <a href="#">
+                        <a href="./BanksData/HelloBank.html">
                             <h3 class="font-bold uppercase text-gray-900">
                                 The innovative online bank
                             </h3>
@@ -195,26 +209,26 @@
 
                 <div class="hidden sm:block sm:basis-56">
                     <img alt=""
-                        src="https://static.wixstatic.com/media/67b256_0b50e22340dc486fac4a8af7f717f535~mv2.png/v1/crop/x_283,y_66,w_514,h_888/fill/w_261,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_0b50e22340dc486fac4a8af7f717f535~mv2.png"
+                        src="https://static.wixstatic.com/media/67b256_184dea20ba654a1285b0a7ee71ce8944~mv2.png/v1/fill/w_323,h_416,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_184dea20ba654a1285b0a7ee71ce8944~mv2.png"
                         class="aspect-square h-full w-full" />
                 </div>
 
                 <div class="flex flex-1 flex-col justify-between">
                     <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                        <a href="#">
+                        <a href="./BanksData/bourso.html">
                             <h3 class="font-bold uppercase text-gray-900">
-                                The innovative online bank
+                                The cheapest bank
                             </h3>
                         </a>
 
                         <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            Discover a reinvented banking experience, where technology and simplicity meet to offer you
-                            a personalized service, accessible anytime, anywhere.
+                            Take advantage of competitive rates and total transparency with our online banking, the
+                            cheapest solution on the market
                         </p>
                     </div>
 
                     <div class="sm:flex sm:items-end sm:justify-end">
-                        <a href="#"
+                        <a href="./BanksData/bourso.html"
                             class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
                             Discover
                         </a>
@@ -236,26 +250,26 @@
 
                 <div class="hidden sm:block sm:basis-56">
                     <img alt=""
-                        src="https://static.wixstatic.com/media/67b256_0b50e22340dc486fac4a8af7f717f535~mv2.png/v1/crop/x_283,y_66,w_514,h_888/fill/w_261,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_0b50e22340dc486fac4a8af7f717f535~mv2.png"
+                        src="https://static.wixstatic.com/media/67b256_bc20b83ee8294c139fd1ad097b60bef0~mv2.png/v1/fill/w_282,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_bc20b83ee8294c139fd1ad097b60bef0~mv2.png"
                         class="aspect-square h-full w-full" />
                 </div>
 
                 <div class="flex flex-1 flex-col justify-between">
                     <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                        <a href="#">
+                        <a href="./BanksData/Fortuneo.html">
                             <h3 class="font-bold uppercase text-gray-900">
-                                The innovative online bank
+                                The online bank for young people
                             </h3>
                         </a>
 
                         <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                            Discover a reinvented banking experience, where technology and simplicity meet to offer you
-                            a personalized service, accessible anytime, anywhere.
+                            An online bank designed for young adventurers, offering total flexibility and services
+                            tailored to your needs, wherever you are in the world
                         </p>
                     </div>
 
                     <div class="sm:flex sm:items-end sm:justify-end">
-                        <a href="#"
+                        <a href="./BanksData/Fortuneo.html"
                             class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
                             Discover
                         </a>
@@ -269,15 +283,13 @@
 
     <h1 class="text-[#ff3132] text-5xl mb-10 font-extrabold text-center">Explore More</h1>
     <div class="max-w-[80rem] mx-auto w-full p-5 flex flex-wrap justify-center items-center gap-x-6 gap-y-8">
-
-
         <div
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="p-8 rounded-t-lg" src="/Assets/Home/card1.png" alt="image" />
+            <a href="./BanksData/bourso.html" class="flex justify-center">
+                <img class="p-8 h-[15rem] rounded-t-lg" src="/Assets/Home/bank2.png" alt="image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="./BanksData/bourso.html">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
@@ -313,18 +325,18 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
-                    <a href="#"
+                    <a href="./BanksData/bourso.html"
                         class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
                 </div>
             </div>
         </div>
         <div
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="p-8 rounded-t-lg" src="/Assets/Home/card1.png" alt="image" />
+            <a href="./BanksData/HelloBank.html" class="flex justify-center">
+                <img class="p-8 h-[15rem] rounded-t-lg" src="/Assets/Home/hello.webp" alt="image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="./BanksData/HelloBank.html">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
@@ -360,18 +372,18 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
-                    <a href="#"
+                    <a href="./BanksData/HelloBank.html"
                         class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
                 </div>
             </div>
         </div>
         <div
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="p-8 rounded-t-lg" src="/Assets/Home/card1.png" alt="image" />
+            <a href="./BanksData/Fortuneo.html" class="">
+                <img class="p-8 rounded-t-lg my-8" src="/Assets/Home/card1.png" alt="image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="./BanksData/Fortuneo.html">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
@@ -407,18 +419,18 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
-                    <a href="#"
+                    <a href="./BanksData/Fortuneo.html"
                         class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
                 </div>
             </div>
         </div>
         <div
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="p-8 rounded-t-lg" src="/Assets/Home/card1.png" alt="image" />
+            <a href="./BanksData/bnp.html" class="flex justify-center">
+                <img class="p-8 rounded-t-lg my-11" src="/Assets/Home/bnp.jpeg" alt="image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="./BanksData/bnp.html">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
@@ -454,18 +466,18 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
-                    <a href="#"
+                    <a href="./BanksData/bnp.html"
                         class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
                 </div>
             </div>
         </div>
         <div
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="p-8 rounded-t-lg" src="/Assets/Home/card1.png" alt="image" />
+            <a href="./BanksData/n26.html" class="flex justify-center">
+                <img class="p-8 rounded-t-lg h-[15rem]" src="/Assets/Home/n26.png" alt="image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="./BanksData/n26.html">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
@@ -501,18 +513,18 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
-                    <a href="#"
+                    <a href="./BanksData/n26.html"
                         class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
                 </div>
             </div>
         </div>
         <div
             class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="p-8 rounded-t-lg" src="/Assets/Home/card1.png" alt="image" />
+            <a href="./BanksData/revolute.html" class="flex justify-center">
+                <img class="p-8 rounded-t-lg h-[15rem]" src="/Assets/Home/rebolute.png" alt="image" />
             </a>
             <div class="px-5 pb-5">
-                <a href="#">
+                <a href="./BanksData/revolute.html">
                     <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
                 </a>
                 <div class="flex items-center mt-2.5 mb-5">
@@ -548,7 +560,148 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
-                    <a href="#"
+                    <a href="./BanksData/revolute.html"
+                        class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="./BanksData/shine.html" class="flex justify-center">
+                <img class="p-8 rounded-t-lg my-12" src="/Assets/Home/shine.png" alt="image" />
+            </a>
+            <div class="px-5 pb-5">
+                <a href="./BanksData/shine.html">
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
+                </a>
+                <div class="flex items-center mt-2.5 mb-5">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
+                    <a href="./BanksData/shine.html"
+                        class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="./BanksData/SocieteGenerale.html" class="flex justify-center">
+                <img class="p-8 rounded-t-lg h-[15rem]" src="/Assets/Home/societeG.png" alt="image" />
+            </a>
+            <div class="px-5 pb-5">
+                <a href="./BanksData/SocieteGenerale.html">
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
+                </a>
+                <div class="flex items-center mt-2.5 mb-5">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
+                    <a href="./BanksData/SocieteGenerale.html"
+                        class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="./BanksData/Monabanq.html" class="flex justify-center">
+                <img class="p-8 rounded-t-lg my-9" src="/Assets/Home/mona.png" alt="image" />
+            </a>
+            <div class="px-5 pb-5">
+                <a href="./BanksData/Monabanq.html">
+                    <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Fortuneo Banque</h5>
+                </a>
+                <div class="flex items-center mt-2.5 mb-5">
+                    <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                            <path
+                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </div>
+                    <span
+                        class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">4.0</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">80€</span>
+                    <a href="./BanksData/Monabanq.html"
                         class="text-white transition-all bg-[#ff3132] hover:opacity-90 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Discover</a>
                 </div>
             </div>
@@ -689,15 +842,16 @@
     <!-- footer=============== -->
 
 
-    <hr class="mt-16 max-w-[90%] mx-auto " >
+    <hr class="mt-16 max-w-[90%] mx-auto ">
     <div class=" bg-[#fff] footer pt-9">
         <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
             <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                 <div class="md:w-[316px]">
                     <p class="text-[18px] font-medium text-[#000]">
-                    <h1 class="text-[#000] font-extrabold">
-                        <span class="text-[#ffc100]">Finan</span>Select
-                    </h1>
+                        <a href="./index.html" class="text-[#000] font-extrabold flex items-center gap-1">
+                            <img src="./Assets/Global/logo.png" class="h-10" alt="">
+                            <span class="text-[#ff3132]">Finan </span> Select
+                        </a>
                     </p>
                     <p class="mt-[18px] text-[15px] font-normal text-[#000]/[80%]">Lorem ipsum dolor sit amet
                         consectetur
@@ -705,7 +859,7 @@
                         elit. Eos, fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio facere officiis
                         enim animi
                         placeat eaque nesciunt alias beatae id, at dicta.</p>
-                    <div class="mt-[18px] flex gap-4">
+                    <div class="mt-[18px] flex gap-4 mb-3 sm:mb-0">
                         <a class="hover:scale-110 transition-all target=" _blank" href="#"><i
                                 class="fa-brands text-[#000] text-2xl fa-facebook"></i></a>
                         <a class="hover:scale-110 transition-all target=" _blank" href="/"><i
@@ -765,7 +919,7 @@
                     </div>
                 </div>
                 <div class="mt-6 flex w-full flex-col justify-between text-[#000] sm:flex-row md:mt-0 md:max-w-[341px]">
-                    <div class="">
+                    <div class="mt-4 sm:mt-0">
                         <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Pages</p>
                         <ul>
                             <li class="mt-[15px]"><a
@@ -773,19 +927,19 @@
                                     href="/index.html">Home</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="./about.html">About</a></li>
+                                    href="./proBank.html">Pro Banks</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="/">Online Banking</a></li>
+                                    href="./Insurance.html">Insurance</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="./BoursoBank.html">BoursoBank</a></li>
+                                    href="./about.html">About Us</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="#">Blog</a></li>
+                                    href="./services.html">Services</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="#">Contact Us</a></li>
+                                    href="./contactUs.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="mt-6 flex flex-col gap-4 sm:mt-0">
@@ -798,6 +952,9 @@
                                 <li class="mt-[15px]"><a
                                         class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal "
                                         href="./PrivacyPolicy.html">Privcay policy</a></li>
+                                <li class="mt-[15px]"><a
+                                        class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
+                                        href="./Blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </div>
@@ -815,7 +972,16 @@
     </div>
 </body>
 
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
 <script>
+
+    document.querySelector('[data-collapse-toggle]').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+
+
+
     const closeCookies = document.getElementById("closeCookies")
     const closeCookiess = document.getElementById("closeCookiess")
     const cookiesHide = document.getElementById("cookiesHide")
