@@ -8,6 +8,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./CSS/NavNutton.css">
     <link rel="stylesheet" href="CSS/index.css">
     <title>FinanSelect</title>
 </head>
@@ -15,23 +16,42 @@
 <body>
 
 
-    <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+    <nav class=" border-gray-200 py-2.5 dark:bg-gray-900 ">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-            <a href="#" class="flex items-center">
-                <img src="./Assets/Global/logo.png" class=" mr-3 sm:h-16 h-10" alt="Logo">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">FinanSelect</span>
+            <a href="./index.html" class="flex items-center">
+                <img src="./Assets/Global/logo.png" class="mr-3 sm:h-12 h-10" alt="Logo">
+                <span
+                    class="self-center text:lg sm:text-xl font-bold sm:font-extrabold whitespace-nowrap dark:text-white"><span
+                        class="text-[#ff3132]">Finan </span>Select</span>
             </a>
-            <div class="flex items-center lg:order-2">
+            <div class="flex gap-1 items-center lg:order-2">
                 <div class="hidden mt-2 mr-4 sm:inline-block">
                     <span></span>
                 </div>
+                <!-- <a href="#"
+                    class="text-white bg-[#ff3132] hover:opacity-90 transition-all font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none">Get
+                    Started</a> -->
 
-                <a href="#"
-                    class="text-white bg-[#ff3132] hover:opacity-90 transition-all  font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none ">Get
-                    Started</a>
-                <button data-collapse-toggle="mobile-menu-2" type="button"
-                    class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="mobile-menu-2" aria-expanded="true">
+                <div>
+                    <button class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                        <span class="text">Get Start</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <button data-collapse-toggle="mobile-menu" type="button"
+                    class="inline-flex mt-2 items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="mobile-menu" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -46,7 +66,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden" id="mobile-menu">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
                         <a href="./index.html"
@@ -54,21 +74,17 @@
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="./about.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <a href="./proBank.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pro
+                            Banks</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">online
-                            banks</a>
+                        <a href="./Insurance.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Insurance</a>
                     </li>
                     <li>
-                        <a href="./BoursoBank.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">BoursoBank</a>
-                    </li>
-                    <li>
-                        <a href="./Blog.html"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        <a href="./services.html"
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-[#ff3132] lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                     </li>
                     <li>
                         <a href="./contactUs.html"
@@ -79,145 +95,152 @@
         </div>
     </nav>
 
-    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-
-
     <!-- ================== -->
 
-    <div class="bg-red-100 ">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 pt-24 text-center ">
+        <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+            <span class="inline-block">
+                <span class="relative whitespace-nowrap text-[#ff3132]">
+                    <svg aria-hidden="true" viewBox="0 0 418 42"
+                        class="absolute top-2/3 left-0 h-[0.58em] w-full fill-[#ff3132]/70" preserveAspectRatio="none">
+                        <path
+                            d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+                        </path>
+                    </svg>
+                    <span class="relative"> Privacy </span></span>
+            </span>
+            <span class="inline-block">Policy</span>
+        </h1>
+        <p class="mt-8">
+            LEGAL NOTICES FINANCE-SELECT
+        </p>
+
+    </div>
+
+    <div class="">
         <div class="container max-w-[75rem] p-5 mx-auto px-4 py-8">
-            <h1 class="text-3xl font-bold mb-4">Privacy Policy</h1>
+            <h2 class="text-2xl font-bold mb-2">IDENTIFY</h2>
 
-            <p class="mb-4">
-                This privacy policy sets out how our website uses and protects any information that you give us when you
-                use
-                this
-                website.
+            <p class="mb-8 opacity-75">
+                Website Name: FinanceFinder URL: http://www.finance-finder.fr/ Owner: Dimitri Dombes
+                Publication Manager: Dimitri Dombes Address: 31 BOULEVARD DES BELGES, 69006 LYON
+                Contact: http://www.finance-finder.fr/ and/or contact@financefinder.fr <br>
+                Hosting: OVH – 2 rue Kellermann – 59100 ROUBAIX – France To contact this host, please go to
+                http://www.ovh.com/fr/support/
             </p>
+            <h2 class="text-2xl font-bold mb-2">INFORMATION ON COOKIES
 
-            <h2 class="text-2xl font-bold mb-2">Information We Collect</h2>
+            </h2>
 
-            <p class="mb-4">
-                We may collect the following information:
+            <p class="mb-8 opacity-75">
+                The site uses tracers (cookies) placed under the control of third parties, subject to your prior
+                consent. These tracers are used to measure the audience of the site. <br>
+
+                You can object to the use of these tracers by configuring your browser or by contacting the third party
+                concerned.
+                <br>
+                The use of tracers is governed by Article 32 II of Law No. 78-17 of 6 January 1978, transposing Article
+                5.3 of Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002, amended by
+                Directive 2009/136/EC. To learn more about cookies and tracers, we invite you to consult the CNIL
+                website : www.cnil.fr.
+
+
             </p>
+            <h2 class="text-2xl font-bold mb-2">DATA PROTECTION
 
-            <ul class="list-disc list-inside mb-4">
-                <li>Your name and contact information</li>
-                <li>Demographic information</li>
-                <li>Other information relevant to customer surveys and/or offers</li>
-            </ul>
+            </h2>
 
-            <h2 class="text-2xl font-bold mb-2">How We Use the Information</h2>
-
-            <p class="mb-4">
-                We require this information to understand your needs and provide you with a better service, and in
-                particular
-                for
-                the following reasons:
+            <p class="mb-8 opacity-75">
+                As part of the use of the services offered by http://www.finance-finder.fr/, in particular those
+                accessible on its website, http://www.finance-finder.fr/, as data controller, may collect and process
+                personal data concerning you. http://www.finance-finder.fr/ attaches great importance to respecting the
+                privacy of users of its website.
+                <br>
+                All personal data processing implemented complies with the regulations in force regarding the protection
+                of personal data, in particular the provisions of the amended "Informatique et Libertés" law of 6
+                January 1978 and the General Data Protection Regulation (EU Regulation 2016/679), also known as "GDPR".
+                In order to ensure compliance with these rules, http://www.finance-finder.fr/ has appointed a data
+                protection officer who is the preferred point of contact for the National Commission for Information
+                Technology and Civil Liberties (CNIL). In addition, http://www.finance-finder.fr/ has implemented the
+                necessary internal procedures to raise awareness among its employees and ensure compliance with these
+                rules within its organization. For any further information, please contact us at
+                http://www.finance-finder.fr/.
             </p>
+            <h2 class="text-2xl font-bold mb-2">TERMS OF USE
 
-            <ul class="list-disc list-inside mb-4">
-                <li>Internal record keeping</li>
-                <li>Improving our products and services</li>
-                <li>Sending promotional emails about new products, special offers, or other information which we think
-                    you
-                    may
-                    find
-                    interesting</li>
-                <li>From time to time, we may also use your information to contact you for market research purposes. We
-                    may
-                    contact
-                    you by email, phone, or mail. We may use the information to customize the website according to your
-                    interests.</li>
-            </ul>
+            </h2>
 
-            <h2 class="text-2xl font-bold mb-2">Security</h2>
-
-            <p class="mb-4">
-                We are committed to ensuring that your information is secure. In order to prevent unauthorized access or
-                disclosure,
-                we have put in place suitable physical, electronic, and managerial procedures to safeguard and secure
-                the
-                information we collect online.
+            <p class="mb-8 opacity-75">
+                Use of this site implies full acceptance of the general conditions of use described below. These
+                conditions may be modified or supplemented at any time
             </p>
+            <h2 class="text-2xl font-bold mb-2">INFORMATION
 
-            <h2 class="text-2xl font-bold mb-2">Cookies</h2>
+            </h2>
 
-            <p class="mb-4">
-                A cookie is a small file that asks permission to be placed on your computer's hard drive. Once you
-                agree,
-                the
-                file
-                is added, and the cookie helps analyze web traffic or lets you know when you visit a particular site.
-                Cookies
-                allow
-                web applications to respond to you as an individual. The web application can tailor its operations to
-                your
-                needs,
-                likes, and dislikes by gathering and remembering information about your preferences.
+            <p class="mb-8 opacity-75">
+                The information and documents presented on the site are for information purposes only, are not
+                exhaustive, and do not engage the responsibility of the owner of the site. The owner of the site cannot
+                be held responsible for direct or indirect damage resulting from access to the site.
+
+
             </p>
+            <h2 class="text-2xl font-bold mb-2">INTERACTIVITY
 
-            <p class="mb-4">
-                Overall, cookies help us provide you with a better website by enabling us to monitor which pages you
-                find
-                useful
-                and which you do not. A cookie in no way gives us access to your computer or any information about you,
-                other
-                than
-                the data you choose to share with us.
+            </h2>
+
+            <p class="mb-8 opacity-75">
+                Users of the site may optionally submit content, which will appear on the site in dedicated sections (in
+                particular via comments). The submitted content remains under the responsibility of its authors, who
+                assume full legal responsibility for it.
+                <br>
+                The owner of the site reserves the right to delete, without notice or justification, any content
+                submitted by users that does not comply with the site's code of ethics or current legislation.
+
+
             </p>
+            <h2 class="text-2xl font-bold mb-2">INTELLECTUAL PROPERTY
 
-            <h2 class="text-2xl font-bold mb-2">Links to Other Websites</h2>
+            </h2>
 
-            <p class="mb-4">
-                Our website may contain links to other websites of interest. However, once you have used these links to
-                leave
-                our
-                site, you should note that we do not have any control over that other website. Therefore, we cannot be
-                responsible
-                for the protection and privacy of any information which you provide whilst visiting such sites and such
-                sites
-                are
-                not governed by this privacy statement. You should exercise caution and look at the privacy statement
-                applicable
-                to
-                the website in question.
+            <p class="mb-8 opacity-75">
+                Unless otherwise indicated, all elements accessible on the site (texts, images, graphics, logos, icons,
+                sounds, software, etc.) remain the exclusive property of their authors with regard to intellectual
+                property rights or usage rights.
+                <br>
+                Any reproduction, representation, modification, publication or adaptation of all or part of the elements
+                of the site, whatever the means or process used, is prohibited without the prior written permission of
+                the author. Any unauthorized use of the site or one of its elements constitutes an infringement and may
+                be prosecuted.
+                <br>
+                The brands and logos reproduced on the site are the property of their respective companies.
+
+
             </p>
+            <h2 class="text-2xl font-bold mb-2">CONNECTIONS
+            </h2>
 
-            <h2 class="text-2xl font-bold mb-2">Controlling Your Personal Information</h2>
-
-            <p class="mb-4">
-                You may choose to restrict the collection or use of your personal information in the following ways:
+            <p class="mb-8 opacity-75">
+                Outgoing links: The owner of the site declines all responsibility and cannot be held liable for
+                referencing via hyperlinks to third-party resources on the Internet, both in terms of their content and
+                their relevance. Incoming links: The owner of the site authorizes hyperlinks to any of the pages of this
+                site, provided that they open a new window and are presented in an unambiguous manner in order to avoid
+                any confusion between the source site and the owner of the site, as well as any presentation that is
+                biased or contrary to the laws in force. The owner of the site reserves the right to request the removal
+                of a link if he considers that the source site does not comply with the rules thus defined.
             </p>
+            <h2 class="text-2xl font-bold mb-2">CONFIDENTIALITY
 
-            <ul class="list-disc list-inside mb-4">
-                <li>If you have previously agreed to us using your personal information for direct marketing purposes,
-                    you
-                    may
-                    change your mind at any time by writing to or emailing us at [email protected]</li>
-                <li>We will not sell, distribute, or lease your personal information to third parties unless we have
-                    your
-                    permission
-                    or are required by law to do so. We may use your personal information to send you promotional
-                    information
-                    about
-                    third parties which we think you may find interesting if you tell us that you wish this to happen.
-                </li>
-                <li>You may request details of personal information which we hold about you. If you would like a copy of
-                    the
-                    information held on you, please write to [Your Company Name, Address, City, State, Zip Code] or
-                    email
-                    [email protected]</li>
-                <li>If you believe that any information we are holding on you is incorrect or incomplete, please write
-                    to or
-                    email
-                    us as soon as possible at the above address. We will promptly correct any information found to be
-                    incorrect.
-                </li>
-            </ul>
+            </h2>
 
-            <p class="mb-4">
-                This privacy policy is subject to change without notice.
+            <p class="mb-8 opacity-75">
+                Any user has the right to access, rectify and oppose personal data concerning him/her, by making a
+                written and signed request, accompanied by proof of identity.
+                <br>
+                The site does not collect personal information, and is not subject to declaration to the CNIL.
+
+
+
             </p>
         </div>
     </div>
@@ -232,9 +255,10 @@
             <div class="flex flex-col justify-between sm:px-[18px] md:flex-row md:px-10">
                 <div class="md:w-[316px]">
                     <p class="text-[18px] font-medium text-[#000]">
-                    <h1 class="text-[#000] font-extrabold">
-                        <span class="text-[#ffc100]">Finan</span>Select
-                    </h1>
+                        <a href="./index.html" class="text-[#000] font-extrabold flex items-center gap-1">
+                            <img src="./Assets/Global/logo.png" class="h-10" alt="">
+                            <span class="text-[#ff3132]">Finan </span> Select
+                        </a>
                     </p>
                     <p class="mt-[18px] text-[15px] font-normal text-[#000]/[80%]">Lorem ipsum dolor sit amet
                         consectetur
@@ -242,7 +266,7 @@
                         elit. Eos, fugit non. Incidunt dolorum adipisci, tempore asperiores nemo odio facere officiis
                         enim animi
                         placeat eaque nesciunt alias beatae id, at dicta.</p>
-                    <div class="mt-[18px] flex gap-4">
+                    <div class="mt-[18px] flex gap-4 mb-3 sm:mb-0">
                         <a class="hover:scale-110 transition-all target=" _blank" href="#"><i
                                 class="fa-brands text-[#000] text-2xl fa-facebook"></i></a>
                         <a class="hover:scale-110 transition-all target=" _blank" href="/"><i
@@ -302,7 +326,7 @@
                     </div>
                 </div>
                 <div class="mt-6 flex w-full flex-col justify-between text-[#000] sm:flex-row md:mt-0 md:max-w-[341px]">
-                    <div class="">
+                    <div class="mt-4 sm:mt-0">
                         <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Pages</p>
                         <ul>
                             <li class="mt-[15px]"><a
@@ -310,19 +334,19 @@
                                     href="/index.html">Home</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="./about.html">About</a></li>
+                                    href="./proBank.html">Pro Banks</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="/">Online Banking</a></li>
+                                    href="./Insurance.html">Insurance</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="./BoursoBank.html">BoursoBank</a></li>
+                                    href="./about.html">About Us</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="#">Blog</a></li>
+                                    href="./services.html">Services</a></li>
                             <li class="mt-[15px]"><a
                                     class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
-                                    href="#">Contact Us</a></li>
+                                    href="./contactUs.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="mt-6 flex flex-col gap-4 sm:mt-0">
@@ -331,10 +355,13 @@
                             <ul>
                                 <li class="mt-[15px]"><a
                                         class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal "
-                                        href="/">Terms and conditions</a></li>
+                                        href="./PrivacyPolicy.html">Terms and conditions</a></li>
                                 <li class="mt-[15px]"><a
                                         class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal "
-                                        href="/our-tutors">Privcay policy</a></li>
+                                        href="./PrivacyPolicy.html">Privcay policy</a></li>
+                                <li class="mt-[15px]"><a
+                                        class="text-deutziawhite transition-all hover:text-deutziawhite/80 font-inter text-[15px] font-normal hover:pl-2"
+                                        href="./Blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </div>
@@ -351,6 +378,14 @@
         </div>
     </div>
 </body>
+
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<script>
+    document.querySelector('[data-collapse-toggle]').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    });
+</script>
 
 
 </html>
