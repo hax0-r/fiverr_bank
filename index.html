@@ -14,6 +14,63 @@
     <title>FinanSelect</title>
 </head>
 
+<style>
+    .animate {
+        animation: viewScroll 2s;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+
+    .comeLeft {
+        animation: left 1.5s;
+    }
+    .fadeIn {
+        animation: fadeIn 1.5s;
+    }
+
+    @keyframes left {
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+            clip-path: inset(0 0 100% 100% );
+        }
+        
+        to {
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    @keyframes fadeIn {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+            clip-path: inset(100% 100% 0 0);
+        }
+
+        to {
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    @keyframes viewScroll {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+            clip-path: inset(100% 100% 0 0);
+        }
+
+        to {
+            clip-path: inset(0 0 0 0);
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
 <body>
 
 
@@ -79,111 +136,46 @@
 
     <!-- ========hero======== -->
 
-    <div class="">
+    <div class="overflow-hidden">
 
         <section class="text-gray-600  max-w-[75rem] w-full m-auto body-font py-16 md:py-0">
             <div class="container mx-auto flex px-5  md:flex-row flex-col items-center">
                 <div
                     class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-extrabold text-gray-900">Bienvenue sur
+                    <h1 class="fadeIn title-font sm:text-4xl text-3xl mb-4 font-extrabold text-gray-900">Bienvenue sur
 
                         <br class="hidden lg:inline-block">FinanSelect
                     </h1>
-                    <p class="mb-8 leading-relaxed">Notre plateforme vous aide à comparer facilement les produits
+                    <p class="mb-8 fadeIn leading-relaxed">Notre plateforme vous aide à comparer facilement les produits
                         financiers comme les prêts, les assurances et les crédits
                         Trouvez rapidement les meilleures offres adaptées à vos besoins et prenez des décisions
                         éclairées avec FinanSelect</p>
                     <div class="flex justify-center">
                         <button
-                            class="inline-flex text-white bg-[#c90a0c] border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Start
-                            Now</button>
-                        <button
+                            class="inline-flex fadeIn text-white bg-[#c90a0c] border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Our
+                            Comparisons</button>
+                        <!-- <button
                             class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Learn
-                            More</button>
+                            More</button> -->
                     </div>
                 </div>
-                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div class="comeLeft lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                     <img class="object-cover object-center rounded" alt="hero" src="./Assets/Home/hero.png">
                 </div>
             </div>
         </section>
     </div>
-
-
-    <!-- <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
-        <p class="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">Welcome to
-            <span class="border-b border-dotted border-slate-300">FinanSelect</span>
-        </p>
-
-        <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-            <span class="inline-block">The
-                <span class="relative whitespace-nowrap text-[#ff3132]">
-                    <svg aria-hidden="true" viewBox="0 0 418 42"
-                        class="absolute top-2/3 left-0 h-[0.58em] w-full fill-[#ff3132]/70" preserveAspectRatio="none">
-                        <path
-                            d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
-                        </path>
-                    </svg>
-                    <span class="relative">Best</span></span>
-            </span>
-            <span class="inline-block">Online Banking</span>
-        </h1>
-
-        <p class="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
-            <span class="inline-block">Bring functionalities of other apps</span>
-            <span class="inline-block">into your Notion workspaces.</span>
-        </p>
-
-        <div class="mt-12 flex flex-col justify-center gap-y-5 sm:mt-10 sm:flex-row sm:gap-y-0 sm:gap-x-6">
-            <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
-                href="#">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
-                    aria-hidden="true" class="h-3 w-3 flex-none" height="1em" width="1em"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M8.824 7.287c.008 0 .004 0 0 0zm-2.8-1.4c.006 0 .003 0 0 0zm16.754 2.161c-.505-1.215-1.53-2.528-2.333-2.943.654 1.283 1.033 2.57 1.177 3.53l.002.02c-1.314-3.278-3.544-4.6-5.366-7.477-.091-.147-.184-.292-.273-.446a3.545 3.545 0 01-.13-.24 2.118 2.118 0 01-.172-.46.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.001a.037.037 0 00-.01.005L15.624 0c-2.585 1.515-3.657 4.168-3.932 5.856a6.197 6.197 0 00-2.305.587.297.297 0 00-.147.37c.057.162.24.24.396.17a5.622 5.622 0 012.008-.523l.067-.005a5.847 5.847 0 011.957.222l.095.03a5.816 5.816 0 01.616.228c.08.036.16.073.238.112l.107.055a5.835 5.835 0 01.368.211 5.953 5.953 0 012.034 2.104c-.62-.437-1.733-.868-2.803-.681 4.183 2.09 3.06 9.292-2.737 9.02a5.164 5.164 0 01-1.513-.292 4.42 4.42 0 01-.538-.232c-1.42-.735-2.593-2.121-2.74-3.806 0 0 .537-2 3.845-2 .357 0 1.38-.998 1.398-1.287-.005-.095-2.029-.9-2.817-1.677-.422-.416-.622-.616-.8-.767a3.47 3.47 0 00-.301-.227 5.388 5.388 0 01-.032-2.842c-1.195.544-2.124 1.403-2.8 2.163h-.006c-.46-.584-.428-2.51-.402-2.913-.006-.025-.343.176-.389.206-.406.29-.787.616-1.136.974-.397.403-.76.839-1.085 1.303a9.816 9.816 0 00-1.562 3.52c-.003.013-.11.487-.19 1.073-.013.09-.026.181-.037.272a7.8 7.8 0 00-.069.667l-.002.034-.023.387-.001.06C.386 18.795 5.593 24 12.016 24c5.752 0 10.527-4.176 11.463-9.661.02-.149.035-.298.052-.448.232-1.994-.025-4.09-.753-5.844z">
-                    </path>
-                </svg>
-                <span class="ml-3">Start Right Now</span>
-            </a>
-            <div class="relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
-                <button
-                    class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right"
-                    id="headlessui-menu-button-:r4:" aria-haspopup="true" aria-expanded="false" data-headlessui-state=""
-                    type="button">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24"
-                        aria-hidden="true" class="h-3 w-3 flex-none" height="1em" width="1em"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M8.824 7.287c.008 0 .004 0 0 0zm-2.8-1.4c.006 0 .003 0 0 0zm16.754 2.161c-.505-1.215-1.53-2.528-2.333-2.943.654 1.283 1.033 2.57 1.177 3.53l.002.02c-1.314-3.278-3.544-4.6-5.366-7.477-.091-.147-.184-.292-.273-.446a3.545 3.545 0 01-.13-.24 2.118 2.118 0 01-.172-.46.03.03 0 00-.027-.03.038.038 0 00-.021 0l-.006.001a.037.037 0 00-.01.005L15.624 0c-2.585 1.515-3.657 4.168-3.932 5.856a6.197 6.197 0 00-2.305.587.297.297 0 00-.147.37c.057.162.24.24.396.17a5.622 5.622 0 012.008-.523l.067-.005a5.847 5.847 0 011.957.222l.095.03a5.816 5.816 0 01.616.228c.08.036.16.073.238.112l.107.055a5.835 5.835 0 01.368.211 5.953 5.953 0 012.034 2.104c-.62-.437-1.733-.868-2.803-.681 4.183 2.09 3.06 9.292-2.737 9.02a5.164 5.164 0 01-1.513-.292 4.42 4.42 0 01-.538-.232c-1.42-.735-2.593-2.121-2.74-3.806 0 0 .537-2 3.845-2 .357 0 1.38-.998 1.398-1.287-.005-.095-2.029-.9-2.817-1.677-.422-.416-.622-.616-.8-.767a3.47 3.47 0 00-.301-.227 5.388 5.388 0 01-.032-2.842c-1.195.544-2.124 1.403-2.8 2.163h-.006c-.46-.584-.428-2.51-.402-2.913-.006-.025-.343.176-.389.206-.406.29-.787.616-1.136.974-.397.403-.76.839-1.085 1.303a9.816 9.816 0 00-1.562 3.52c-.003.013-.11.487-.19 1.073-.013.09-.026.181-.037.272a7.8 7.8 0 00-.069.667l-.002.034-.023.387-.001.06C.386 18.795 5.593 24 12.016 24c5.752 0 10.527-4.176 11.463-9.661.02-.149.035-.298.052-.448.232-1.994-.025-4.09-.753-5.844z">
-                        </path>
-                    </svg>
-                    <span class="ml-3">Learn More</span>
-                </button>
-            </div>
-        </div>
-
-    </div> -->
     <!-- ========hero======== -->
 
     <div class="max-w-[80rem] w-full mx-auto p-5 my-16 mb-24">
 
-        <div class="">
+        <div class="animate">
             <article
                 class="flex bg-white transition hover:shadow-xl max-w-[45rem] w-full sm:min-h-[18rem] rounded-lg overflow-hidden">
-                <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                    <time datetime="2022-10-10"
-                        class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-                        <span>2024</span>
-                        <span class="w-px flex-1 bg-gray-900/10"></span>
-                        <span>Aug 2</span>
-                    </time>
-                </div>
+
 
                 <div class="hidden sm:block sm:basis-56">
-                    <img alt=""
-                        src="https://static.wixstatic.com/media/67b256_bc20b83ee8294c139fd1ad097b60bef0~mv2.png/v1/fill/w_282,h_464,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_bc20b83ee8294c139fd1ad097b60bef0~mv2.png"
-                        class="aspect-square h-full w-full" />
+                    <img alt="" src="./Assets/bankImages/fortuneo.png" class="aspect-square h-full w-full" />
                 </div>
 
                 <div class="flex flex-1 flex-col justify-between">
@@ -209,22 +201,13 @@
                 </div>
             </article>
         </div>
-        <div class="flex justify-end my-16">
+        <div class="flex justify-end my-16 animate">
             <article
                 class="flex bg-white transition hover:shadow-xl max-w-[45rem] w-full sm:min-h-[18rem] rounded-lg overflow-hidden">
-                <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                    <time datetime="2022-10-10"
-                        class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-                        <span>2024</span>
-                        <span class="w-px flex-1 bg-gray-900/10"></span>
-                        <span>Aug 2</span>
-                    </time>
-                </div>
+
 
                 <div class="hidden sm:block sm:basis-56">
-                    <img alt=""
-                        src="https://static.wixstatic.com/media/67b256_184dea20ba654a1285b0a7ee71ce8944~mv2.png/v1/fill/w_323,h_416,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_184dea20ba654a1285b0a7ee71ce8944~mv2.png"
-                        class="aspect-square h-full w-full" />
+                    <img alt="" src="./Assets/bankImages/bourso.png" class="aspect-square h-full w-full" />
                 </div>
 
                 <div class="flex flex-1 flex-col justify-between">
@@ -250,22 +233,13 @@
                 </div>
             </article>
         </div>
-        <div class="">
+        <div class="animate">
             <article
                 class="flex bg-white transition hover:shadow-xl max-w-[45rem] w-full sm:min-h-[18rem] rounded-lg overflow-hidden">
-                <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                    <time datetime="2022-10-10"
-                        class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-                        <span>2024</span>
-                        <span class="w-px flex-1 bg-gray-900/10"></span>
-                        <span>Aug 2</span>
-                    </time>
-                </div>
+
 
                 <div class="hidden sm:block sm:basis-56">
-                    <img alt=""
-                        src="https://static.wixstatic.com/media/67b256_0b50e22340dc486fac4a8af7f717f535~mv2.png/v1/crop/x_283,y_66,w_514,h_888/fill/w_261,h_453,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/67b256_0b50e22340dc486fac4a8af7f717f535~mv2.png"
-                        class="aspect-square h-full w-full" />
+                    <img alt="" src="./Assets/bankImages/hello.jpeg" class="aspect-square h-full w-full" />
                 </div>
 
                 <div class="flex flex-1 flex-col justify-between">
@@ -298,7 +272,7 @@
     <h1 class="text-[#ff3132] text-5xl mb-10 font-extrabold text-center">Nos Comparaisons</h1>
     <div class="max-w-[80rem] mx-auto w-full p-5 flex flex-wrap justify-center items-center gap-x-6 gap-y-8">
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl  ">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl  ">
             <a href="./BanksData/bourso.html" class="flex justify-center">
                 <img class="p-8 h-[15rem] rounded-t-lg" src="/Assets/Home/bank2.png" alt="image" />
             </a>
@@ -345,7 +319,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/HelloBank.html" class="flex justify-center">
                 <img class="p-8 h-[15rem] rounded-t-lg" src="/Assets/Home/hello.webp" alt="image" />
             </a>
@@ -392,7 +366,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/Fortuneo.html" class="">
                 <img class="p-8 rounded-t-lg my-8" src="/Assets/Home/card1.png" alt="image" />
             </a>
@@ -439,7 +413,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/bnp.html" class="flex justify-center">
                 <img class="p-8 rounded-t-lg my-11" src="/Assets/Home/bnp.jpeg" alt="image" />
             </a>
@@ -486,7 +460,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/n26.html" class="flex justify-center">
                 <img class="p-8 rounded-t-lg h-[15rem]" src="/Assets/Home/n26.png" alt="image" />
             </a>
@@ -533,7 +507,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/revolute.html" class="flex justify-center">
                 <img class="p-8 rounded-t-lg h-[15rem]" src="/Assets/Home/rebolute.png" alt="image" />
             </a>
@@ -580,7 +554,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/shine.html" class="flex justify-center">
                 <img class="p-8 rounded-t-lg my-12" src="/Assets/Home/shine.png" alt="image" />
             </a>
@@ -627,7 +601,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/SocieteGenerale.html" class="flex justify-center">
                 <img class="p-8 rounded-t-lg h-[15rem]" src="/Assets/Home/societeG.png" alt="image" />
             </a>
@@ -674,7 +648,7 @@
             </div>
         </div>
         <div
-            class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
+            class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl">
             <a href="./BanksData/Monabanq.html" class="flex justify-center">
                 <img class="p-8 rounded-t-lg my-9" src="/Assets/Home/mona.png" alt="image" />
             </a>
@@ -728,12 +702,12 @@
 
     <div class="max-w-screen-lg mx-auto p-5 sm:p-10 md:p-16">
 
-        <div class="mb-10 rounded overflow-hidden flex flex-col mx-auto text-center">
+        <div class="mb-10  rounded overflow-hidden flex flex-col mx-auto text-center">
             <a href="#"
                 class="max-w-3xl mx-auto text-xl sm:text-4xl font-semibold inline-block hover:opacity-75 transition duration-500 ease-in-out inline-block mb-2">Who
                 is <span class="text-[#ff3132] font-bold">FinanSelect</span> ?</a>
 
-            <a href="#">
+            <a href="#" class="animate">
                 <img class="w-full h-[25rem] my-4"
                     src="https://static.wixstatic.com/media/67b256_d276a211cc0748eaacb9460316cdd8c1~mv2.png/v1/fill/w_900,h_617,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/67b256_d276a211cc0748eaacb9460316cdd8c1~mv2.png"
                     alt="Sunset in the mountains">
@@ -829,7 +803,7 @@
                     <p class="text-[18px] font-medium text-[#000]">
                         <a href="./index.html" class="text-[#000] font-extrabold flex items-center gap-1">
                             <img src="./Assets/Global/logo.png" class="h-10" alt="">
-                            <span class="text-[#ff3132]">Finan </span> Select
+                            <span class="text-[#ff3132]">Finan<span class="text-black">Select</span> </span>
                         </a>
                     </p>
                     <p class="mt-[18px] text-[15px] font-normal text-[#000]/[80%]">Lorem ipsum dolor sit amet
