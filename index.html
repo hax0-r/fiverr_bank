@@ -24,6 +24,7 @@
     .comeLeft {
         animation: left 1.5s;
     }
+
     .fadeIn {
         animation: fadeIn 1.5s;
     }
@@ -32,9 +33,9 @@
         from {
             transform: translateX(100px);
             opacity: 0;
-            clip-path: inset(0 0 100% 100% );
+            clip-path: inset(0 0 100% 100%);
         }
-        
+
         to {
             clip-path: inset(0 0 0 0);
             opacity: 1;
@@ -56,6 +57,7 @@
             transform: translateY(0);
         }
     }
+
     @keyframes viewScroll {
         from {
             transform: translateY(100px);
@@ -151,9 +153,11 @@
                         Trouvez rapidement les meilleures offres adaptées à vos besoins et prenez des décisions
                         éclairées avec FinanSelect</p>
                     <div class="flex justify-center">
-                        <button
-                            class="inline-flex fadeIn text-white bg-[#c90a0c] border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Our
-                            Comparisons</button>
+                        <a href="#NosComparaisons">
+                            <button
+                                class="inline-flex fadeIn text-white bg-[#c90a0c] border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Our
+                                Comparisons</button>
+                        </a>
                         <!-- <button
                             class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Learn
                             More</button> -->
@@ -269,7 +273,7 @@
 
 
 
-    <h1 class="text-[#ff3132] text-5xl mb-10 font-extrabold text-center">Nos Comparaisons</h1>
+    <h1 class="text-[#ff3132] text-5xl mb-10 font-extrabold text-center" id="NosComparaisons">Nos Comparaisons</h1>
     <div class="max-w-[80rem] mx-auto w-full p-5 flex flex-wrap justify-center items-center gap-x-6 gap-y-8">
         <div
             class="animate w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-all duration-500 hover:shadow-xl  ">
